@@ -35,15 +35,10 @@
         return randomWords[randomIndex];
       }
 
-      function getRandomInRange(min,max) {
-        return Math.floor(Math.random() * (max - min + 1)) + min;
-      }
-
       para.addEventListener('click', updateName);
 
       function updateName() {
-        const number =  getRandomInRange(1,999);
-        const word =  getRandomWord();
+         const word =  getRandomWord();
         para.textContent = `Твоя подсказка в: ${word}`;
 
 
